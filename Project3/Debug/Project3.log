@@ -1,0 +1,143 @@
+﻿Build started 01/10/2016 14:37:05.
+     1>Project "C:\Users\Admin\Documents\Visual Studio 2013\Projects\Project3\Project3\Project3.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1697,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
+         MyForm.cpp
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(11): error C2653: 'MySql' : is not a class or namespace name
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(11): error C2871: 'MySqlClient' : a namespace with this name does not exist
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(18): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(20): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(21): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(23): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(24): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(27): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(33): error C2065: 'MySqlConnection' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(33): error C2065: 'conDatabase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(33): error C2061: syntax error : identifier 'MySqlConnection'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(34): error C2065: 'con' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(34): error C2065: 'conDatabase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(35): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(35): error C2061: syntax error : identifier 'MySqlCommand'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(36): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(36): error C2061: syntax error : identifier 'MySqlDataAdapter'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(38): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(38): error C2227: left of '->SelectCommand' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(38): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(40): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(40): error C2227: left of '->Fill' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(42): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(42): error C2227: left of '->Update' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(212): error C2065: 'df' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(212): error C2061: syntax error : identifier 'MySqlCommandBuilder'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(213): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\UpdateUser.h(213): error C2227: left of '->Update' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(11): error C2653: 'MySql' : is not a class or namespace name
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(11): error C2871: 'MySqlClient' : a namespace with this name does not exist
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(321): error C2065: 'MySqlConnection' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(321): error C2065: 'conDatabase2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(321): error C2061: syntax error : identifier 'MySqlConnection'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(322): error C2065: 'MySqlCommand' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(322): error C2065: 'cmdDataBase2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(322): error C2061: syntax error : identifier 'MySqlCommand'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(323): error C2065: 'MySqlDataReader' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(323): error C2065: 'myReader2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(326): error C2065: 'conDatabase2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(326): error C2227: left of '->Open' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(327): error C2065: 'myReader2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(327): error C2065: 'cmdDataBase2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(327): error C2227: left of '->ExecuteReader' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(328): error C2065: 'myReader2' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\AddUser.h(328): error C2227: left of '->Close' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(11): error C2653: 'MySql' : is not a class or namespace name
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(11): error C2871: 'MySqlClient' : a namespace with this name does not exist
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(19): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(21): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(22): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(24): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(25): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(32): error C2065: 'MySqlConnection' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(32): error C2065: 'conDatabase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(32): error C2061: syntax error : identifier 'MySqlConnection'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(33): error C2065: 'con' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(33): error C2065: 'conDatabase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(191): error C2065: 'MySqlCommand' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(191): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(191): error C2061: syntax error : identifier 'MySqlCommand'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(192): error C2065: 'MySqlDataReader' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(192): error C2065: 'myReader' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(193): error C2065: 'con' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(193): error C2227: left of '->Open' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(194): error C2065: 'myReader' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(194): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(194): error C2227: left of '->ExecuteReader' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(195): error C2065: 'con' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(195): error C2227: left of '->Close' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(198): error C2065: 'MySqlCommand' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(198): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(198): error C2061: syntax error : identifier 'MySqlCommand'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(200): error C2065: 'MySqlDataAdapter' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(200): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(200): error C2061: syntax error : identifier 'MySqlDataAdapter'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(201): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(201): error C2227: left of '->SelectCommand' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(201): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(203): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(203): error C2227: left of '->Fill' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(207): error C2065: 'sda' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\RemoveUser.h(207): error C2227: left of '->Update' must point to class/struct/union/generic type
+                 type is 'unknown-type'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(11): error C2653: 'MySql' : is not a class or namespace name
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(11): error C2871: 'MySqlClient' : a namespace with this name does not exist
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(19): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(21): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(22): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(24): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(30): error C2143: syntax error : missing ';' before '^'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(36): error C2065: 'MySqlConnection' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(36): error C2065: 'conDatabase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(36): error C2061: syntax error : identifier 'MySqlConnection'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(37): error C2065: 'con' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(37): error C2065: 'conDatabase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(206): error C2065: 'MySqlCommand' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(206): error C2065: 'cmdDataBase' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(206): error C2061: syntax error : identifier 'MySqlCommand'
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(207): error C2065: 'MySqlDataReader' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(207): error C2065: 'myReader' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(208): error C2065: 'con' : undeclared identifier
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(208): error C2227: left of '->Open' must point to class/struct/union/generic type
+     1>c:\users\admin\documents\visual studio 2013\projects\project3\project3\BanUser.h(208): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "C:\Users\Admin\Documents\Visual Studio 2013\Projects\Project3\Project3\Project3.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.25

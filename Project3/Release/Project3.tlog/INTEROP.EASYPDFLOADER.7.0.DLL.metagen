@@ -1,0 +1,48 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.EasyPDFLoader.7.0, Version=7.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct EasyPDFLoader.ldrResult: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFLoader.ldrResult LDR_R_UNKNOWN = -2147155969 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_INTERNAL = -2147155968 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_INVALID_PARAM = -2147155967 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_SETUP_INVALID = -2147155966 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_LICENSE_INVALID = -2147155965 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_LICENSE_EXPIRED = -2147155964 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_OUT_OF_MEMORY = -2147155963 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_FEATURE_NOT_ENABLED = -2147155962 : Public, Static, Literal, HasDefault
+    EasyPDFLoader.ldrResult LDR_R_SUCCESS = 0 : Public, Static, Literal, HasDefault
+Class EasyPDFLoader.LoaderClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    EasyPDFLoader.ILoader
+    EasyPDFLoader.Loader
+  Properties:
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    System.String LicenseKey 'set' : 
+  Methods:
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    LoadObject(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface EasyPDFLoader.Loader: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFLoader.ILoader
+Interface EasyPDFLoader.ILoader: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    System.String LicenseKey 'set' : 
+  Methods:
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    LoadObject(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract

@@ -1,0 +1,42 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.pscprinterLib.7.0, Version=7.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface pscprinterLib._IPSCPrinterEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+Class pscprinterLib.PSCPrinterClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    pscprinterLib.IPSCPrinter
+    pscprinterLib.PSCPrinter
+    pscprinterLib._IPSCPrinterEvents_Event
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+  Methods:
+    PrintPDF(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Boolean(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface pscprinterLib._IPSCPrinterEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+Interface pscprinterLib.PSCPrinter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    pscprinterLib.IPSCPrinter
+    pscprinterLib._IPSCPrinterEvents_Event
+Interface pscprinterLib.IPSCPrinter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+  Methods:
+    PrintPDF(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Boolean(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class pscprinterLib._IPSCPrinterEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    pscprinterLib._IPSCPrinterEvents
+  Fields:
+    Int32 m_dwCookie : Public

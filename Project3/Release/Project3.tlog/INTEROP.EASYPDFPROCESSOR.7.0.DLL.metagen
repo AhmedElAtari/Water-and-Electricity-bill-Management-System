@@ -1,0 +1,459 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.EasyPDFProcessor.7.0, Version=7.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Struct EasyPDFProcessor.prcResult: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcResult PRC_R_UNKNOWN = -2147155969 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_INTERNAL = -2147155968 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_INVALID_PARAM = -2147155967 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_INVALID_PDF = -2147155966 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_UNSUPPORTED_PDF_VERISON = -2147155965 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_INFILE_OPEN_FAILED = -2147155964 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_OUTFILE_OPEN_FAILED = -2147155963 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_PDF_ENCRYPTED = -2147155962 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_INVALID_PASSWORD = -2147155961 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_OWNER_PASSWORD_REQUIRED = -2147155960 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_SETUP_INVALID = -2147155959 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_USER_CANCELED = -2147155958 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_LICENSE_INVALID = -2147155957 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_LICENSE_EXPIRED = -2147155956 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_FEATURE_NOT_ENABLED = -2147155955 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_PHYSICAL_PRINTER_COM_FAILED = -2147155954 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcResult PRC_R_INIT_SIGNATURE_FAILED = -2147155953 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcPageRotation: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcPageRotation PRC_ROT_0_DEG = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcPageRotation PRC_ROT_90_DEG = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcPageRotation PRC_ROT_180_DEG = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcPageRotation PRC_ROT_270_DEG = 3 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcSecEncryption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcSecEncryption PRC_SEC_ENCRYPT_40BITS = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecEncryption PRC_SEC_ENCRYPT_128BITS = 1 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcSecAnnotationPerm: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcSecAnnotationPerm PRC_SEC_ANNOT_PERM_FULL = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecAnnotationPerm PRC_SEC_ANNOT_PERM_NONE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecAnnotationPerm PRC_SEC_ANNOT_PERM_FORM = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcSecExtractionPerm: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcSecExtractionPerm PRC_SEC_EXTR_PERM_FULL = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecExtractionPerm PRC_SEC_EXTR_PERM_NONE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecExtractionPerm PRC_SEC_EXTR_PERM_ACCESSIBILITY = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcSecModificationPerm: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcSecModificationPerm PRC_SEC_MODIFY_PERM_FULL = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecModificationPerm PRC_SEC_MODIFY_PERM_NONE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecModificationPerm PRC_SEC_MODIFY_PERM_ASSEMBLY = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcSecPrintingPerm: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcSecPrintingPerm PRC_SEC_PRINT_PERM_FULL = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecPrintingPerm PRC_SEC_PRINT_PERM_NONE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcSecPrintingPerm PRC_SEC_PRINT_PERM_LOWRES = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcCodePage: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcCodePage PRC_CP_SYSTEM_DEFAULT = -1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcCodePage PRC_CP_UTF7 = -2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcCodePage PRC_CP_UTF8 = -3 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcCodePage PRC_CP_UNICODE = -4 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcAttachIcon: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcAttachIcon PRC_ATTACHICON_GRAPH = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAttachIcon PRC_ATTACHICON_PAPERCLIP = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAttachIcon PRC_ATTACHICON_PUSHPIN = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAttachIcon PRC_ATTACHICON_TAG = 3 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcNoteIcon: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_COMMENT = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_HELP = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_INSERT = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_KEY = 3 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_NEWPARAGRAPH = 4 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_NOTE = 5 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcNoteIcon PRC_NOTEICON_PARAGRAPH = 6 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcAnnotBorderStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_INVISIBLE = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_SOLIDLINE_THIN = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_SOLIDLINE_MEDIUM = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_SOLIDLINE_THICK = 3 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_DASHLINE_THIN = 4 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_DASHLINE_MEDIUM = 5 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_DASHLINE_THICK = 6 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_UNDERLINE_THIN = 7 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_UNDERLINE_MEDIUM = 8 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcAnnotBorderStyle PRC_BORDERSTYLE_UNDERLINE_THICK = 9 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcStampIcon: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_APPROVED = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_ASIS = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_CONFIDENTIAL = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_DEPARTMENTAL = 3 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_DRAFT = 4 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_EXPERIMENTAL = 5 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_EXPIRED = 6 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_FINAL = 7 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_FORCOMMENT = 8 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_FORPUBLICRELEASE = 9 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_NOTAPPROVED = 10 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_NOTFORPUBLICRELEASE = 11 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_SOLD = 12 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampIcon PRC_STAMPICON_TOPSECRET = 13 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcDefaultFont: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_HELVETICA = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_HELVETICA_BOLD = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_HELVETICA_OBLIQUE = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_HELVETICA_BOLDOBLIQUE = 3 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_COURIER = 4 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_COURIER_BOLD = 5 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_COURIER_OBLIQUE = 6 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_COURIER_BOLDOBLIQUE = 7 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_TIMES = 8 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_TIMES_BOLD = 9 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_TIMES_ITALIC = 10 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_TIMES_BOLDITALIC = 11 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_SYMBOL = 12 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDefaultFont PRC_DEFFONT_ZAPFDINGBATS = 13 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcZoomType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcZoomType PRC_ZOOMTYPE_ACTUAL_SIZE = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcZoomType PRC_ZOOMTYPE_FIT_PAGE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcZoomType PRC_ZOOMTYPE_FIT_HEIGHT = 2 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcZoomType PRC_ZOOMTYPE_FIT_WIDTH = 3 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcZoomType PRC_ZOOMTYPE_INHERIT_ZOOM = 4 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcFontEmbedding: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcFontEmbedding PRC_FONT_EMBED_NONE = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcFontEmbedding PRC_FONT_EMBED_SUBSET = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcFontEmbedding PRC_FONT_EMBED_FULLSET = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcWmarkHPosition: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcWmarkHPosition PRC_WMARK_HPOS_LEFT = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkHPosition PRC_WMARK_HPOS_CENTER = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkHPosition PRC_WMARK_HPOS_RIGHT = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcWmarkVPosition: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcWmarkVPosition PRC_WMARK_VPOS_TOP = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkVPosition PRC_WMARK_VPOS_CENTER = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkVPosition PRC_WMARK_VPOS_BOTTOM = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcWmarkZOrder: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcWmarkZOrder PRC_WMARK_ZORDER_TOP = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkZOrder PRC_WMARK_ZORDER_BOTTOM = 1 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcWmarkAlignment: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcWmarkAlignment PRC_WMARK_ALIGN_LEFT = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkAlignment PRC_WMARK_ALIGN_CENTER = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcWmarkAlignment PRC_WMARK_ALIGN_RIGHT = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcStampHPosition: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcStampHPosition PRC_STAMP_HPOS_LEFT = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampHPosition PRC_STAMP_HPOS_CENTER = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampHPosition PRC_STAMP_HPOS_RIGHT = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcStampVPosition: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcStampVPosition PRC_STAMP_VPOS_TOP = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampVPosition PRC_STAMP_VPOS_CENTER = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampVPosition PRC_STAMP_VPOS_BOTTOM = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcStampZOrder: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcStampZOrder PRC_STAMP_ZORDER_TOP = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcStampZOrder PRC_STAMP_ZORDER_BOTTOM = 1 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcDestinationType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcDestinationType PRC_DESTINATION_SCROLL_TO = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDestinationType PRC_DESTINATION_FIT_PAGE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcDestinationType PRC_DESTINATION_FIT_HORIZONTALLY = 2 : Public, Static, Literal, HasDefault
+Struct EasyPDFProcessor.prcCropState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFProcessor.prcCropState PRC_CROP_OFF = 0 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcCropState PRC_CROP_AS_CROP_BOX = 1 : Public, Static, Literal, HasDefault
+    EasyPDFProcessor.prcCropState PRC_CROP_AS_META_DATA = 2 : Public, Static, Literal, HasDefault
+Class EasyPDFProcessor.PDFProcessorClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    EasyPDFProcessor.IPDFProcessor
+    EasyPDFProcessor.PDFProcessor
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    Boolean OptimizeAfterEachProcess 'get set' : 
+  Methods:
+    OpenMem(Object(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MergeMem(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MergeBatchMem(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractImages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddHighlight(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachFilesBatch(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAttachedFiles(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractPagesMem(Object(In, HasFieldMarshal), Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    StampPDFonPDF(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CropPages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDocumentJavaScriptsCount(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDocumentJavaScriptName(String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDocumentJavaScriptContent(String(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteDocumentJavaScript(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddDocumentJavaScript(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddThumbnails(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Merge(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Split(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeletePages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RotatePages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), prcPageRotation(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Optimize(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetVersionNumber(String(In, HasFieldMarshal), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsEncrypted(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HasUserPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HasPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageCount(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDocumentInfo(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetDocumentInfo(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Encrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcSecEncryption(In), prcSecAnnotationPerm(In), prcSecExtractionPerm(In), prcSecModificationPerm(In), prcSecPrintingPerm(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Decrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageRotation(String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageSize(String(In, HasFieldMarshal), Int32(In), Double&(Out), Double&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddHyperlink(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), prcAnnotBorderStyle(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddNote(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcNoteIcon(In), UInt32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddAttachment(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcAttachIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRubberStamp(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcStampIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractText2(String(In, HasFieldMarshal), Int32(In), Double(In), Double(In), Double(In), Double(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractPages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFreeText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Double(In), prcDefaultFont(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_OptimizeAfterEachProcess(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_OptimizeAfterEachProcess(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AppendBookmark(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), prcZoomType(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteAllBookmarks(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDigitalSignatureInformation(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddPDFText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), Double(In), prcDefaultFont(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddSquareCircle(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Boolean(In), UInt32(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Linearize(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddDateTimeTextForPrint(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PrintToPhysicalPrinter(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddStamp(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), prcStampHPosition(In), prcStampVPosition(In), prcStampZOrder(In), Double(In), Double(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddWatermark(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcWmarkHPosition(In), prcWmarkVPosition(In), prcWmarkZOrder(In), prcWmarkAlignment(In), Double(In), Double(In), Int32(In), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), Int32(In), UInt32(In), Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MergeBatch(Object(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractAllBookmarks(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractAllHyperlinks(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddDigitalSignature(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetDocumentInfoXMP(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageSizeVar(String(In, HasFieldMarshal), Int32(In), Object&(Out, HasFieldMarshal), Object&(Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachFile(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddTrueTypePDFText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CropBox(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcCropState(In), Double(In), Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OpenFile(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface EasyPDFProcessor.PDFProcessor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFProcessor.IPDFProcessor
+Interface EasyPDFProcessor.IPDFProcessor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    Boolean OptimizeAfterEachProcess 'get set' : 
+  Methods:
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Merge(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Split(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeletePages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RotatePages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), prcPageRotation(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Optimize(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetVersionNumber(String(In, HasFieldMarshal), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsEncrypted(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HasUserPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HasPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageCount(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDocumentInfo(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetDocumentInfo(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Encrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcSecEncryption(In), prcSecAnnotationPerm(In), prcSecExtractionPerm(In), prcSecModificationPerm(In), prcSecPrintingPerm(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Decrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageRotation(String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageSize(String(In, HasFieldMarshal), Int32(In), Double&(Out), Double&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddHyperlink(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), prcAnnotBorderStyle(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddNote(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcNoteIcon(In), UInt32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddAttachment(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcAttachIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddRubberStamp(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcStampIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractText2(String(In, HasFieldMarshal), Int32(In), Double(In), Double(In), Double(In), Double(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractPages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddFreeText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Double(In), prcDefaultFont(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_OptimizeAfterEachProcess(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_OptimizeAfterEachProcess(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AppendBookmark(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), prcZoomType(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteAllBookmarks(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDigitalSignatureInformation(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddPDFText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), Double(In), prcDefaultFont(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddSquareCircle(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Boolean(In), UInt32(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Linearize(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddDateTimeTextForPrint(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PrintToPhysicalPrinter(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddStamp(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), prcStampHPosition(In), prcStampVPosition(In), prcStampZOrder(In), Double(In), Double(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddWatermark(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcWmarkHPosition(In), prcWmarkVPosition(In), prcWmarkZOrder(In), prcWmarkAlignment(In), Double(In), Double(In), Int32(In), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), Int32(In), UInt32(In), Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MergeBatch(Object(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractAllBookmarks(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractAllHyperlinks(String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddDigitalSignature(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetDocumentInfoXMP(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageSizeVar(String(In, HasFieldMarshal), Int32(In), Object&(Out, HasFieldMarshal), Object&(Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachFile(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddTrueTypePDFText(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CropBox(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcCropState(In), Double(In), Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OpenFile(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OpenMem(Object(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MergeMem(Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MergeBatchMem(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractImages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddHighlight(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachFilesBatch(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveAttachedFiles(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractPagesMem(Object(In, HasFieldMarshal), Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    StampPDFonPDF(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CropPages(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDocumentJavaScriptsCount(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDocumentJavaScriptName(String(In, HasFieldMarshal), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDocumentJavaScriptContent(String(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteDocumentJavaScript(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddDocumentJavaScript(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddThumbnails(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface EasyPDFProcessor.IPDFProcessorHandle: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Boolean OptimizeBeforeClose 'get set' : 
+  Methods:
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseMem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_OptimizeBeforeClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_OptimizeBeforeClose(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ExtractAllBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractAllHyperlinks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDocumentInfo(Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageRotation(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageSize(Int32(In), Double&(Out), Double&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddStamp(String(In, HasFieldMarshal), Int32(In), prcStampHPosition(In), prcStampVPosition(In), prcStampZOrder(In), Double(In), Double(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddStamp2(String(In, HasFieldMarshal), Int32(In), Int32(In), prcStampHPosition(In), prcStampVPosition(In), prcStampZOrder(In), Double(In), Double(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddWatermark(prcWmarkHPosition(In), prcWmarkVPosition(In), prcWmarkZOrder(In), prcWmarkAlignment(In), Double(In), Double(In), Int32(In), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), Int32(In), UInt32(In), Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddTrueTypePDFText(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddAttachment(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcAttachIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddFreeText(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Double(In), prcDefaultFont(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddHyperlink(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), prcAnnotBorderStyle(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddNote(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcNoteIcon(In), UInt32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddRubberStamp(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcStampIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddSquareCircle(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Boolean(In), UInt32(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AppendBookmark(String(In, HasFieldMarshal), Int32(In), Int32(In), prcZoomType(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteAllBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetDocumentInfo(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetDocumentInfoXMP(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RotatePages(Int32(In), Int32(In), prcPageRotation(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseEncrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcSecEncryption(In), prcSecAnnotationPerm(In), prcSecExtractionPerm(In), prcSecModificationPerm(In), prcSecPrintingPerm(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseDecrypt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseMemEncrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcSecEncryption(In), prcSecAnnotationPerm(In), prcSecExtractionPerm(In), prcSecModificationPerm(In), prcSecPrintingPerm(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseMemDecrypt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPageSizeVar(Int32(In), Object&(Out, HasFieldMarshal), Object&(Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddInternalLink(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), Int32(In), prcDestinationType(In), Double(In), Double(In), prcAnnotBorderStyle(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddHighlight(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CropPages(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class EasyPDFProcessor.PDFProcessorHandleClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFProcessor.IPDFProcessorHandle
+    EasyPDFProcessor.PDFProcessorHandle
+  Properties:
+    Boolean OptimizeBeforeClose 'get set' : 
+  Methods:
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseMem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_OptimizeBeforeClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_OptimizeBeforeClose(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ExtractAllBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractAllHyperlinks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDocumentInfo(Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal), Object&(In, Out, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageRotation(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageSize(Int32(In), Double&(Out), Double&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddStamp(String(In, HasFieldMarshal), Int32(In), prcStampHPosition(In), prcStampVPosition(In), prcStampZOrder(In), Double(In), Double(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddStamp2(String(In, HasFieldMarshal), Int32(In), Int32(In), prcStampHPosition(In), prcStampVPosition(In), prcStampZOrder(In), Double(In), Double(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddWatermark(prcWmarkHPosition(In), prcWmarkVPosition(In), prcWmarkZOrder(In), prcWmarkAlignment(In), Double(In), Double(In), Int32(In), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), Int32(In), UInt32(In), Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddTrueTypePDFText(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), prcFontEmbedding(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddAttachment(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcAttachIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFreeText(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Double(In), prcDefaultFont(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddHyperlink(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), prcAnnotBorderStyle(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddNote(Int32(In), Int32(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcNoteIcon(In), UInt32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRubberStamp(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcStampIcon(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddSquareCircle(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), Boolean(In), UInt32(In), UInt32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AppendBookmark(String(In, HasFieldMarshal), Int32(In), Int32(In), prcZoomType(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteAllBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetDocumentInfo(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetDocumentInfoXMP(Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RotatePages(Int32(In), Int32(In), prcPageRotation(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseEncrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcSecEncryption(In), prcSecAnnotationPerm(In), prcSecExtractionPerm(In), prcSecModificationPerm(In), prcSecPrintingPerm(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseDecrypt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseMemEncrypt(String(In, HasFieldMarshal), String(In, HasFieldMarshal), prcSecEncryption(In), prcSecAnnotationPerm(In), prcSecExtractionPerm(In), prcSecModificationPerm(In), prcSecPrintingPerm(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseMemDecrypt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPageSizeVar(Int32(In), Object&(Out, HasFieldMarshal), Object&(Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddInternalLink(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), Int32(In), prcDestinationType(In), Double(In), Double(In), prcAnnotBorderStyle(In), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddHighlight(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In), String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), UInt32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CropPages(Int32(In), Int32(In), Double(In), Double(In), Double(In), Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface EasyPDFProcessor.PDFProcessorHandle: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFProcessor.IPDFProcessorHandle

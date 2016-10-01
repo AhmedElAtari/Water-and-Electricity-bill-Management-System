@@ -1,0 +1,264 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.EasyPDFConverter.7.0, Version=7.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct EasyPDFConverter.cnvResult: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFConverter.cnvResult CNV_R_UNKNOWN = -2147155969 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_INTERNAL = -2147155968 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_INVALID_PARAM = -2147155967 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_INVALID_PDF = -2147155966 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_UNSUPPORTED_PDF_VERISON = -2147155965 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_INFILE_OPEN_FAILED = -2147155964 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_OUTFILE_OPEN_FAILED = -2147155963 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_PDF_ENCRYPTED = -2147155962 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_INVALID_PASSWORD = -2147155961 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_OWNER_PASSWORD_REQUIRED = -2147155960 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_SETUP_INVALID = -2147155959 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_USER_CANCELED = -2147155958 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_LICENSE_INVALID = -2147155957 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_LICENSE_EXPIRED = -2147155956 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_INIT_CONVERSION_TIMEOUT = -2147155955 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_PAGE_CONVERSION_TIMEOUT = -2147155954 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_FILE_CONVERSION_TIMEOUT = -2147155953 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_PROCESS_GONE = -2147155952 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_OUT_OF_MEMORY = -2147155951 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_FEATURE_NOT_ENABLED = -2147155950 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvResult CNV_R_SUCCESS = 0 : Public, Static, Literal, HasDefault
+Struct EasyPDFConverter.cnvMonitorResponse: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFConverter.cnvMonitorResponse CNV_MON_CONTINUE_CONVERSION = 0 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvMonitorResponse CNV_MON_CANCEL_CONVERSION = -1 : Public, Static, Literal, HasDefault
+Struct EasyPDFConverter.cnvImageFormat: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFConverter.cnvImageFormat CNV_IMAGE_FMT_BMP = 0 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageFormat CNV_IMAGE_FMT_JPEG = 1 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageFormat CNV_IMAGE_FMT_PNG = 2 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageFormat CNV_IMAGE_FMT_GIF = 3 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageFormat CNV_IMAGE_FMT_TIFF = 4 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageFormat CNV_IMAGE_FMT_EMF = 5 : Public, Static, Literal, HasDefault
+Struct EasyPDFConverter.cnvImageColor: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFConverter.cnvImageColor CNV_IMAGE_CLR_BW = 0 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageColor CNV_IMAGE_CLR_GRAY = 1 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageColor CNV_IMAGE_CLR_8BIT = 2 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvImageColor CNV_IMAGE_CLR_24BIT = 3 : Public, Static, Literal, HasDefault
+Struct EasyPDFConverter.cnvTiffCompression: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_NONE = 0 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CCITTRLE = 1 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CCITTFAX3 = 2 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CCITTFAX4 = 3 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_LZW = 4 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_JPEG = 5 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_PACKBITS = 6 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CLASSF204X98_G3 = 7 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CLASSF204X196_G3 = 8 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CLASSF204X98_G4 = 9 : Public, Static, Literal, HasDefault
+    EasyPDFConverter.cnvTiffCompression CNV_TIFF_COMPRESSION_CLASSF204X196_G4 = 10 : Public, Static, Literal, HasDefault
+Class EasyPDFConverter.PDFConverterClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    EasyPDFConverter.IPDFConverter
+    EasyPDFConverter.PDFConverter
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    EasyPDFConverter.PDFConverterMonitor PDFConverterMonitor 'get ' : 
+    EasyPDFConverter.PDF2Image PDF2Image 'get ' : 
+  Methods:
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PDFConverterMonitor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PDF2Image(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFConverter.PDFConverter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFConverter.IPDFConverter
+Interface EasyPDFConverter.IPDFConverter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    EasyPDFConverter.PDFConverterMonitor PDFConverterMonitor 'get ' : 
+    EasyPDFConverter.PDF2Image PDF2Image 'get ' : 
+  Methods:
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PDFConverterMonitor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PDF2Image(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface EasyPDFConverter.IPDFConverterMonitor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+Interface EasyPDFConverter.IPDF2Image: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 PageConversionTimeout 'get set' : 
+    Int32 FileConversionTimeout 'get set' : 
+    EasyPDFConverter.cnvImageFormat ImageFormat 'get set' : 
+    Int32 ImageQuality 'get set' : 
+    Int32 ImageResolution 'get set' : 
+    EasyPDFConverter.cnvImageColor ImageColor 'get set' : 
+    Int32 MinimumPageNumberDigits 'get set' : 
+    Boolean AddPageNumberForSingleFileOutput 'get set' : 
+    System.String PageNumberSeparator 'get set' : 
+    Boolean TiffMultiPage 'get set' : 
+    EasyPDFConverter.cnvTiffCompression TiffCompression 'get set' : 
+    Int32 TiffResolutionX 'get set' : 
+    Int32 TiffResolutionY 'get set' : 
+  Methods:
+    Convert(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PageConversionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PageConversionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FileConversionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FileConversionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImageFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ImageFormat(cnvImageFormat(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImageQuality(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ImageQuality(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImageResolution(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ImageResolution(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImageColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ImageColor(cnvImageColor(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MinimumPageNumberDigits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MinimumPageNumberDigits(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AddPageNumberForSingleFileOutput(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AddPageNumberForSingleFileOutput(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PageNumberSeparator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PageNumberSeparator(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TiffMultiPage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TiffMultiPage(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TiffCompression(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TiffCompression(cnvTiffCompression(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TiffResolutionX(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TiffResolutionX(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TiffResolutionY(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TiffResolutionY(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFConverter.PDF2ImageClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFConverter.IPDF2Image
+    EasyPDFConverter.PDF2Image
+  Properties:
+    Int32 PageConversionTimeout 'get set' : 
+    Int32 FileConversionTimeout 'get set' : 
+    EasyPDFConverter.cnvImageFormat ImageFormat 'get set' : 
+    Int32 ImageQuality 'get set' : 
+    Int32 ImageResolution 'get set' : 
+    EasyPDFConverter.cnvImageColor ImageColor 'get set' : 
+    Int32 MinimumPageNumberDigits 'get set' : 
+    Boolean AddPageNumberForSingleFileOutput 'get set' : 
+    System.String PageNumberSeparator 'get set' : 
+    Boolean TiffMultiPage 'get set' : 
+    EasyPDFConverter.cnvTiffCompression TiffCompression 'get set' : 
+    Int32 TiffResolutionX 'get set' : 
+    Int32 TiffResolutionY 'get set' : 
+  Methods:
+    Convert(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PageConversionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PageConversionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FileConversionTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FileConversionTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageFormat(cnvImageFormat(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageQuality(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageQuality(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageResolution(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageResolution(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageColor(cnvImageColor(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MinimumPageNumberDigits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MinimumPageNumberDigits(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AddPageNumberForSingleFileOutput(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AddPageNumberForSingleFileOutput(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PageNumberSeparator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PageNumberSeparator(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TiffMultiPage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TiffMultiPage(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TiffCompression(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TiffCompression(cnvTiffCompression(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TiffResolutionX(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TiffResolutionX(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TiffResolutionY(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TiffResolutionY(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFConverter.PDF2Image: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFConverter.IPDF2Image
+Interface EasyPDFConverter._IPDFConverterMonitorEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    OnInit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnPageStart(Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnEnd(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class EasyPDFConverter.PDFConverterMonitorClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFConverter.IPDFConverterMonitor
+    EasyPDFConverter.PDFConverterMonitor
+    EasyPDFConverter._IPDFConverterMonitorEvents_Event
+  Events:
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnInitEventHandler OnInit: 
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnPageStartEventHandler OnPageStart: 
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnEndEventHandler OnEnd: 
+  Methods:
+    add_OnInit(_IPDFConverterMonitorEvents_OnInitEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_OnInit(_IPDFConverterMonitorEvents_OnInitEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_OnPageStart(_IPDFConverterMonitorEvents_OnPageStartEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_OnPageStart(_IPDFConverterMonitorEvents_OnPageStartEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_OnEnd(_IPDFConverterMonitorEvents_OnEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_OnEnd(_IPDFConverterMonitorEvents_OnEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface EasyPDFConverter._IPDFConverterMonitorEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnInitEventHandler OnInit: 
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnPageStartEventHandler OnPageStart: 
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnEndEventHandler OnEnd: 
+  Methods:
+    add_OnInit(_IPDFConverterMonitorEvents_OnInitEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_OnInit(_IPDFConverterMonitorEvents_OnInitEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_OnPageStart(_IPDFConverterMonitorEvents_OnPageStartEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_OnPageStart(_IPDFConverterMonitorEvents_OnPageStartEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_OnEnd(_IPDFConverterMonitorEvents_OnEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_OnEnd(_IPDFConverterMonitorEvents_OnEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class EasyPDFConverter._IPDFConverterMonitorEvents_OnInitEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class EasyPDFConverter._IPDFConverterMonitorEvents_OnPageStartEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In), Int32(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual
+Class EasyPDFConverter._IPDFConverterMonitorEvents_OnEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32(In)): PrivateScope, Public, Virtual
+Interface EasyPDFConverter.PDFConverterMonitor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFConverter.IPDFConverterMonitor
+    EasyPDFConverter._IPDFConverterMonitorEvents_Event
+Class EasyPDFConverter._IPDFConverterMonitorEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    EasyPDFConverter._IPDFConverterMonitorEvents
+  Fields:
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnInitEventHandler m_OnInitDelegate : Public
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnPageStartEventHandler m_OnPageStartDelegate : Public
+    EasyPDFConverter._IPDFConverterMonitorEvents_OnEndEventHandler m_OnEndDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    OnInit(): PrivateScope, Public, Virtual
+    OnPageStart(Int32, Int32, String): PrivateScope, Public, Virtual
+    OnEnd(Int32): PrivateScope, Public, Virtual

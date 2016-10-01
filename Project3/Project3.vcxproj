@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E26BF6F1-BE0E-4EFD-834A-56A90B3E8D35}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GreenSoft</RootNamespace>
+    <ProjectName>GreenSoft</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <EntryPointSymbol>Main</EntryPointSymbol>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Apropos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="BanUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="choix.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="General.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="General_Agencier.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RemoveClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RemoveUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="SearchClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="statistque.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UpdateClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UpdateFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UpdateUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFacture.resx">
+      <DependentUpon>AddFacture.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apropos.resx">
+      <DependentUpon>Apropos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanUser.resx">
+      <DependentUpon>BanUser.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choix.resx">
+      <DependentUpon>choix.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GClient.resx">
+      <DependentUpon>GClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.resx">
+      <DependentUpon>General.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General_Agencier.resx">
+      <DependentUpon>General_Agencier.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFacture.resx">
+      <DependentUpon>GFacture.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUser.resx">
+      <DependentUpon>GUser.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveClient.resx">
+      <DependentUpon>RemoveClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveUser.resx">
+      <DependentUpon>RemoveUser.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchClient.resx">
+      <DependentUpon>SearchClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistque.resx">
+      <DependentUpon>statistque.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateClient.resx">
+      <DependentUpon>UpdateClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFacture.resx">
+      <DependentUpon>UpdateFacture.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUser.resx">
+      <DependentUpon>UpdateUser.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project31.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Desktop\splash\Image\app.ico" />
+    <Image Include="..\..\..\..\..\Desktop\splash\Image\logo22.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,523 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.EasyPDFDocument.7.0, Version=7.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct EasyPDFDocument.docResult: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFDocument.docResult DOC_R_UNKNOWN = -2147155969 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_INTERNAL = -2147155968 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_INVALID_PARAM = -2147155967 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_INVALID_PDF = -2147155966 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_UNSUPPORTED_PDF_VERISON = -2147155965 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_INFILE_OPEN_FAILED = -2147155964 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_OUTFILE_OPEN_FAILED = -2147155963 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_PDF_ENCRYPTED = -2147155962 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_INVALID_PASSWORD = -2147155961 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_OWNER_PASSWORD_REQUIRED = -2147155960 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_SETUP_INVALID = -2147155959 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_USER_CANCELED = -2147155958 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_LICENSE_INVALID = -2147155957 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_LICENSE_EXPIRED = -2147155956 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_FEATURE_NOT_ENABLED = -2147155955 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docResult DOC_R_XMLLITE_MISSING = -2147155954 : Public, Static, Literal, HasDefault
+Struct EasyPDFDocument.docFormFieldType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EasyPDFDocument.docFormFieldType DOC_FRMTYPE_UNKNOWN = 0 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docFormFieldType DOC_FRMTYPE_TEXT = 1 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docFormFieldType DOC_FRMTYPE_CHECK = 2 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docFormFieldType DOC_FRMTYPE_RADIO = 3 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docFormFieldType DOC_FRMTYPE_COMBO = 4 : Public, Static, Literal, HasDefault
+    EasyPDFDocument.docFormFieldType DOC_FRMTYPE_LIST = 5 : Public, Static, Literal, HasDefault
+Class EasyPDFDocument.PDFDocumentClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    EasyPDFDocument.IPDFDocument
+    EasyPDFDocument.PDFDocument
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    System.String FileName 'get ' : 
+    Boolean Modified 'get ' : 
+    EasyPDFDocument.FormFields FormFields 'get ' : 
+  Methods:
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Open(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveAs(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_FileName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FormFields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.PDFDocument: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IPDFDocument
+Interface EasyPDFDocument.IPDFDocument: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String LicenseKey 'set' : 
+    Int32 LibraryVersionMajor 'get ' : 
+    Int32 LibraryVersionMinor 'get ' : 
+    System.String FileName 'get ' : 
+    Boolean Modified 'get ' : 
+    EasyPDFDocument.FormFields FormFields 'get ' : 
+  Methods:
+    set_LicenseKey(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Initialize(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_LibraryVersionMajor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LibraryVersionMinor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Open(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveAs(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_FileName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FormFields(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface EasyPDFDocument.IFormFields: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    EasyPDFDocument.FormField Item [System.Object] 'get ' : 
+    Int32 Count 'get ' : 
+    Boolean Modified 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface EasyPDFDocument.IFormField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFDocument.FormFieldsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.IFormFields
+    System.Collections.IEnumerable
+    EasyPDFDocument.FormFields
+  Properties:
+    EasyPDFDocument.FormField Item [System.Object] 'get ' : 
+    Int32 Count 'get ' : 
+    Boolean Modified 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.FormFields: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IFormFields
+    System.Collections.IEnumerable
+Class EasyPDFDocument.FormFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.FormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.FormField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IFormField
+Class EasyPDFDocument.TextFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.ITextField
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.TextField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String Value 'get set' : 
+    Int32 MaxLen 'get ' : 
+    Boolean Multiline 'get ' : 
+    Boolean Password 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxLen(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Multiline(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Password(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.TextField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.ITextField
+    EasyPDFDocument.IFormField
+Interface EasyPDFDocument.ITextField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IFormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String Value 'get set' : 
+    Int32 MaxLen 'get ' : 
+    Boolean Multiline 'get ' : 
+    Boolean Password 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxLen(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Multiline(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Password(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFDocument.ChoiceFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.ChoiceField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.ChoiceField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+Interface EasyPDFDocument.IChoiceField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IFormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFDocument.CheckFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.ICheckField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.CheckField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.CheckField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.ICheckField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+Interface EasyPDFDocument.ICheckField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFDocument.RadioFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.IRadioField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.RadioField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+    Boolean NoToggleToOff 'get ' : 
+    Boolean RadiosInUnison 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NoToggleToOff(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RadiosInUnison(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.RadioField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IRadioField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+Interface EasyPDFDocument.IRadioField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+    Boolean NoToggleToOff 'get ' : 
+    Boolean RadiosInUnison 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NoToggleToOff(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RadiosInUnison(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFDocument.ComboFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.IComboField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.ComboField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+    Boolean CustomValueEnabled 'get ' : 
+    System.String CustomValue 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CustomValueEnabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CustomValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CustomValue(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.ComboField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IComboField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+Interface EasyPDFDocument.IComboField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+    Boolean CustomValueEnabled 'get ' : 
+    System.String CustomValue 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CustomValueEnabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CustomValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CustomValue(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class EasyPDFDocument.ListFieldClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    EasyPDFDocument.IListField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+    EasyPDFDocument.ListField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+    Boolean MultiSelect 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MultiSelect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface EasyPDFDocument.ListField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IListField
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+Interface EasyPDFDocument.IListField: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    EasyPDFDocument.IChoiceField
+    EasyPDFDocument.IFormField
+  Properties:
+    System.String Name 'get ' : 
+    EasyPDFDocument.docFormFieldType Type 'get ' : 
+    Boolean Modified 'get ' : 
+    System.String ItemDisplayName [Int32] 'get ' : 
+    System.String ItemValue [Int32] 'get ' : 
+    Boolean ItemSelected [Int32] 'get set' : 
+    Int32 SelectedItem 'get ' : 
+    System.String SelectedItemValue 'get ' : 
+    Int32 SelectedItemCount 'get ' : 
+    Int32 ItemCount 'get ' : 
+    Boolean MultiSelect 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Modified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetItemIndex(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ItemDisplayName(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemValue(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemSelected(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ItemSelected(Int32(In), Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItem(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ItemCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MultiSelect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
