@@ -1,6 +1,5 @@
-# Water-and-Electricity-bill-Management-System
-GreenSoft is a desktop soft designed to manage and organize water and electricity bill.
 # Water and Electricity bill Management System
+
 
 GreenSoft is a C++ cross-platform GUI for managing Water and Electricity bill.
 
